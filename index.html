@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iron Kite Imaging</title>
+  <meta
+    name="description"
+    content="Iron Kite Imaging provides professional aerial imaging, drone photography, video, inspections, and mapping services."
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0f14;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #11161d, #0b0f14);
+      padding: 20px 20px 80px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: 0 auto 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 1.1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #d9d9d9;
+    }
+
+    .nav-links a {
+      margin-left: 24px;
+      color: #c7c7c7;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px 0 0;
+    }
+
+    .hero img {
+      max-width: 240px;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+      color: #f3f3f3;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 28px;
+      font-size: 1.1rem;
+      color: #b7bcc3;
+    }
+
+    .tagline {
+      color: #d47a2c;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.2s ease;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: #d47a2c;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #b9641b;
+    }
+
+    .btn-secondary {
+      border: 1px solid #5a626d;
+      color: #e5e5e5;
+    }
+
+    .btn-secondary:hover {
+      border-color: #d47a2c;
+      color: #ffffff;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 70px 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 18px;
+      color: #f2f2f2;
+      text-align: center;
+    }
+
+    .section-intro {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      text-align: center;
+      color: #aeb4bb;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #121820;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #f0f0f0;
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      color: #b4bac1;
+      font-size: 0.97rem;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .about-text p {
+      color: #b4bac1;
+      margin-bottom: 16px;
+    }
+
+    .about-box {
+      background: #121820;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px;
+      padding: 30px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #10161d;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      padding: 50px 20px;
+    }
+
+    .contact p {
+      color: #b4bac1;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px 40px;
+      color: #7f8790;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .nav-links a {
+        margin: 0 10px;
+      }
+
+      .hero h1 {
+        font-size: 2.3rem;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">IRON KITE IMAGING</div>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <img src="logo.png" alt="Iron Kite Imaging Logo" />
+      <h1>IRON KITE IMAGING</h1>
+      <div class="tagline">AERIAL IMAGING. PRECISION RESULTS.</div>
+      <p>
+        Professional drone services for real estate, aerial photography,
+        video, inspections, and mapping. Clean visuals, reliable service,
+        and a sharp eye from above.
+      </p>
+      <div class="hero-buttons">
+        <a href="mailto:ironkiteimaging@gmail.com" class="btn btn-primary">Email Now</a>
+        <a href="#services" class="btn btn-secondary">View Services</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="services">
+    <h2>Services</h2>
+    <p class="section-intro">
+      High-quality aerial content and drone services tailored for property,
+      construction, business, and promotional needs.
+    </p>
+
+    <div class="services-grid">
+      <div class="card">
+        <h3>Real Estate Photography</h3>
+        <p>
+          Clean, professional aerial photos that help listings stand out
+          and give buyers a better view of the property.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Aerial Video</h3>
+        <p>
+          Smooth cinematic footage for listings, promotions, land showcases,
+          and branded content.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Drone Inspections</h3>
+        <p>
+          Capture hard-to-reach views for roofs, structures, and property
+          conditions without the hassle of traditional access.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Construction Progress</h3>
+        <p>
+          Track project progress with clear aerial visuals that document
+          timelines, milestones, and site development.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Mapping Services</h3>
+        <p>
+          Aerial data collection and visual mapping support for land,
+          planning, and project documentation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Custom Projects</h3>
+        <p>
+          Need something specific? We can discuss custom drone imaging
+          solutions for your project or business.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about">
+      <div class="about-text">
+        <h2>About Iron Kite Imaging</h2>
+        <p>
+          Iron Kite Imaging is built around precision, professionalism,
+          and strong visual results. We provide aerial imaging services
+          designed to help properties, projects, and businesses stand out.
+        </p>
+        <p>
+          Whether you need powerful listing photos, progress tracking,
+          inspection visuals, or custom aerial content, our goal is simple:
+          deliver reliable service and quality work from above.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3 style="margin-bottom: 12px; color: #f0f0f0;">Why Choose Us</h3>
+        <p style="color: #b4bac1; margin-bottom: 12px;">
+          • Professional aerial perspective
+        </p>
+        <p style="color: #b4bac1; margin-bottom: 12px;">
+          • Clean, high-quality results
+        </p>
+        <p style="color: #b4bac1; margin-bottom: 12px;">
+          • Reliable communication
+        </p>
+        <p style="color: #b4bac1;">
+          • Service focused on real value
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>
+        Ready to talk about your project or get a quote? Reach out and let’s
+        discuss how Iron Kite Imaging can help.
+      </p>
+      <a href="mailto:ironkiteimaging@gmail.com" class="btn btn-primary">ironkiteimaging@gmail.com</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Iron Kite Imaging. All rights reserved.
+  </footer>
+</body>
+</html>
